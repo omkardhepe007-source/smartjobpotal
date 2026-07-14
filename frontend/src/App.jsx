@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -18,14 +19,41 @@ import ManageUsers from "./pages/ManageUsers";
 import ManageApplications from "./pages/ManageApplications";
 
 function App() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    const email = localStorage.getItem("email");
+    const fullName = localStorage.getItem("fullName");
+    const role = localStorage.getItem("role");
+    const id = localStorage.getItem("id");
+    if (token && email) {
+      setUser({ token, email, fullName, role, id });
+    }
+  }, []);
+
+  const loginUser = (userData) => {
+    localStorage.setItem("token", userData.token);
+    localStorage.setItem("email", userData.email);
+    localStorage.setItem("fullName", userData.fullName);
+    localStorage.setItem("role", userData.role);
+    localStorage.setItem("id", userData.id);
+    setUser(userData);
+  };
+
+  const logoutUser = () => {
+    localStorage.clear();
+    setUser(null);
+  };
+
   return (
     <Router>
-      <Navbar />
+      <Navbar user={user} onLogout={logoutUser} />
       <main className="min-vh-100">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Login onLogin={loginUser} />} />
           <Route path="/register" element={<Register />} />
           <Route path="/jobs" element={<JobList />} />
           <Route path="/jobs/:id" element={<JobDetails />} />

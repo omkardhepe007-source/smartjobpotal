@@ -29,4 +29,8 @@ public class ApplicationService {
         application.setStatus(status);
         return applicationRepository.save(application);
     }
+
+    public List<Application> getAllApplications() {
+        return applicationRepository.findAll();
+    }
 }

@@ -33,4 +33,9 @@ public class ApplicationController {
     public ResponseEntity<Application> updateStatus(@PathVariable Long id, @RequestParam String status) {
         return ResponseEntity.ok(applicationService.updateStatus(id, status));
     }
+
+    @GetMapping
+    public ResponseEntity<List<Application>> getAll() {
+        return ResponseEntity.ok(applicationService.getAllApplications());
+    }
 }
