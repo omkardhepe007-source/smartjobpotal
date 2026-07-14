@@ -1,0 +1,15 @@
+C:\Users\OMKAR\Desktop\new smart\smart-job-portal\auth-service\src\main\java\com\smartjob\auth\AuthServiceApplication.java
+C:\Users\OMKAR\Desktop\new smart\smart-job-portal\auth-service\src\main\java\com\smartjob\auth\controller\AuthController.java
+C:\Users\OMKAR\Desktop\new smart\smart-job-portal\auth-service\src\main\java\com\smartjob\auth\dto\AuthResponse.java
+C:\Users\OMKAR\Desktop\new smart\smart-job-portal\auth-service\src\main\java\com\smartjob\auth\dto\LoginRequest.java
+C:\Users\OMKAR\Desktop\new smart\smart-job-portal\auth-service\src\main\java\com\smartjob\auth\dto\RegisterRequest.java
+C:\Users\OMKAR\Desktop\new smart\smart-job-portal\auth-service\src\main\java\com\smartjob\auth\entity\Role.java
+C:\Users\OMKAR\Desktop\new smart\smart-job-portal\auth-service\src\main\java\com\smartjob\auth\entity\User.java
+C:\Users\OMKAR\Desktop\new smart\smart-job-portal\auth-service\src\main\java\com\smartjob\auth\exception\GlobalExceptionHandler.java
+C:\Users\OMKAR\Desktop\new smart\smart-job-portal\auth-service\src\main\java\com\smartjob\auth\exception\ResourceNotFoundException.java
+C:\Users\OMKAR\Desktop\new smart\smart-job-portal\auth-service\src\main\java\com\smartjob\auth\repository\RoleRepository.java
+C:\Users\OMKAR\Desktop\new smart\smart-job-portal\auth-service\src\main\java\com\smartjob\auth\repository\UserRepository.java
+C:\Users\OMKAR\Desktop\new smart\smart-job-portal\auth-service\src\main\java\com\smartjob\auth\security\JwtAuthenticationFilter.java
+C:\Users\OMKAR\Desktop\new smart\smart-job-portal\auth-service\src\main\java\com\smartjob\auth\security\JwtUtil.java
+C:\Users\OMKAR\Desktop\new smart\smart-job-portal\auth-service\src\main\java\com\smartjob\auth\security\SecurityConfig.java
+C:\Users\OMKAR\Desktop\new smart\smart-job-portal\auth-service\src\main\java\com\smartjob\auth\service\AuthService.java
