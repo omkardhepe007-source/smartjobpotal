@@ -40,8 +40,22 @@ npm run dev
 
 ## Deployment
 
+### Database: Aiven MySQL
+
+The backend services are configured to use environment variables for database connection. When deploying on Render, Railway, or Aiven, set these environment variables in your platform's settings:
+
+- `DB_URL` = `jdbc:mysql://mysql-16d7d2a7-omkardhepe007-1a69.d.aivencloud.com:11560/defaultdb?sslMode=REQUIRED&allowPublicKeyRetrieval=true&useSSL=true`
+- `DB_USERNAME` = `avnadmin`
+- `DB_PASSWORD` = (your Aiven password from console)
+
+The app uses these environment variables; if not provided, it defaults to localhost MySQL (for local development).
+
 ### Netlify (frontend)
 
+Use these values in the Netlify form:
+
+- Branch to deploy: `main`
+- Base directory: `frontend`
 - Build command: `npm run build`
 - Publish directory: `dist`
 - Environment variable:
@@ -54,6 +68,10 @@ For each Spring Boot service:
 - Build command: `mvn clean package -DskipTests`
 - Start command: `java -jar target/*.jar`
 - Port: Render will set `PORT`; the app already uses `${PORT:8081}` / `${PORT:8082}`.
+- Environment variables (set the Aiven credentials):
+  - `DB_URL`
+  - `DB_USERNAME`
+  - `DB_PASSWORD`
 
 ### Railway / Avion
 

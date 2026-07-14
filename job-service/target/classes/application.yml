@@ -1,19 +1,20 @@
 server:
-  port: 8082
+  port: ${PORT:8082}
 
 spring:
   datasource:
-    url: ${DB_URL:jdbc:h2:mem:smartjob_jobs;DB_CLOSE_DELAY=-1;MODE=MySQL}
-    username: ${DB_USERNAME:sa}
-    password: ${DB_PASSWORD:}
-    driver-class-name: org.h2.Driver
-  h2:
-    console:
-      enabled: true
+    url: ${DB_URL:jdbc:mysql://mysql-16d7d2a7-omkardhepe007-1a69.d.aivencloud.com:11560/defaultdb?sslMode=REQUIRED&allowPublicKeyRetrieval=true&useSSL=true}
+    username: ${DB_USERNAME:avnadmin}
+    password: ${DB_PASSWORD:AVNS_wT_DhMvl_ToVmvTDyz7}
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    database-platform: org.hibernate.dialect.MySQL8Dialect
 
 springdoc:
   api-docs:
