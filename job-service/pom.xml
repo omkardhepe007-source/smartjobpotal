@@ -14,7 +14,7 @@
     <artifactId>job-service</artifactId>
     <version>1.0.0</version>
     <name>job-service</name>
-    <description>Job microservice for Smart Job Portal</description>
+    <description>Job microservice for RojgarSetu</description>
 
     <properties>
         <java.version>21</java.version>

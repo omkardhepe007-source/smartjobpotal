@@ -1,4 +1,4 @@
-# AI Agent Guide for Smart Job Portal
+# AI Agent Guide for RojgarSetu
 
 This repository is a full-stack portfolio project with two Spring Boot backend microservices and a React/Vite frontend. Use this guide to understand the codebase layout, primary run commands, and service boundaries.
 

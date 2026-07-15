@@ -3,7 +3,7 @@ export default function About() {
     <div className="container py-5">
       <div className="row align-items-center g-4">
         <div className="col-lg-6">
-          <h1 className="display-6 fw-bold">About Smart Job Portal</h1>
+          <h1 className="display-6 fw-bold">About RojgarSetu</h1>
           <p className="lead">
             This project is built as a complete Java full stack portfolio
             application for a fresher developer.

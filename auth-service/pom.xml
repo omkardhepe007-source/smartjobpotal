@@ -14,7 +14,7 @@
     <artifactId>auth-service</artifactId>
     <version>1.0.0</version>
     <name>auth-service</name>
-    <description>Authentication microservice for Smart Job Portal</description>
+    <description>Authentication microservice for RojgarSetu</description>
 
     <properties>
         <java.version>21</java.version>

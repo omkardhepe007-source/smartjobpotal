@@ -27,7 +27,7 @@ export default function Home() {
           <div className="row align-items-center">
             <div className="col-lg-7">
               <h1 className="display-5 fw-bold">
-                Find Your Dream Job with Smart Job Portal
+                Find Your Dream Job with RojgarSetu
               </h1>
               <p className="lead">
                 A modern platform for freshers and professionals to explore

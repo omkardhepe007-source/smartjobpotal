@@ -1,6 +1,6 @@
-# Smart Job Portal
+# RojgarSetu
 
-Smart Job Portal is a full-stack portfolio project for a fresher Java developer. It includes:
+RojgarSetu is a full-stack portfolio project for a fresher Java developer. It includes:
 
 - Spring Boot 3 microservices
 - JWT authentication

@@ -12,7 +12,7 @@ export default function Navbar({ user, onLogout }) {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <Link className="navbar-brand fw-bold" to="/">
-          Smart Job Portal
+          RojgarSetu
         </Link>
         <button
           className="navbar-toggler"
